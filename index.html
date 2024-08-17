@@ -27,10 +27,8 @@
       }).then(response => response.text())
         .then(data => {
           document.getElementById('message').textContent = `Hello, ${name}! You have clocked in/out.`;
-          }).catch(error => {
-        console.error('Error:', error);
-      });
-  });
+        }).catch(error => {
+          console.error('Error:', error);
         });
     });
 
@@ -41,7 +39,5 @@
       }
     });
   </script>
-
-
-
-
+</body>
+</html>
